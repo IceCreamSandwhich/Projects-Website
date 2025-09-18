@@ -1,333 +1,242 @@
- <html><head>
-<meta charset="utf-8">
-<!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-<!-- Replace the content tag with appropriate information -->
-<meta content="DESCRIPTION META TAG" name="description">
-<meta content="SOCIAL MEDIA TITLE TAG" property="og:title">
-<meta content="SOCIAL MEDIA DESCRIPTION TAG TAG" property="og:description">
-<meta content="URL OF THE WEBSITE" property="og:url">
-<!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-<meta content="static/image/your_banner_image.png" property="og:image">
-<meta content="1200" property="og:image:width">
-<meta content="630" property="og:image:height">
-<meta content="TWITTER BANNER TITLE META TAG" name="twitter:title">
-<meta content="TWITTER BANNER DESCRIPTION META TAG" name="twitter:description">
-<!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-<meta content="static/images/your_twitter_banner_image.png" name="twitter:image">
-<meta content="summary_large_image" name="twitter:card">
-<!-- Keywords for your paper to be indexed by-->
-<meta content="" name="keywords">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Isaac Osei | Engineering Projects Portfolio</title>
-<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-<link href="static/css/bulma.min.css" rel="stylesheet">
-<link href="static/css/bulma-carousel.min.css" rel="stylesheet">
-<link href="static/css/bulma-slider.min.css" rel="stylesheet">
-<link href="static/css/fontawesome.all.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-<link href="static/css/index.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script><script src="https://documentcloud.adobe.com/view-sdk/3.74.1_3.2.12-59b2719c/ViewSDKInterface.js"></script>
-<script defer="" src="static/js/fontawesome.all.min.js"></script>
-<script src="static/js/bulma-carousel.min.js"></script>
-<script src="static/js/bulma-slider.min.js"></script>
-<script src="static/js/index.js"></script>
-<style type="text/css">.ViewSDK_hideOverflow {
-        overflow: hidden;
-    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
-        width: 100%;
-    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
-        width: 100vw;
-    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
-        height: 100%;
-    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
-        height: 100vh;
-    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
-        width:100vw !important; height:100vh !important;
-        max-width:100vw !important; max-height:100vh !important;
-        position:fixed; top:0; left:0; z-index:99999;
-        margin: 0 !important; padding: 0 !important;
-        border: none !important;
-    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
-        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
-        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
-        position:fixed; top:0; left:0; z-index:99999;
-        margin: 0 !important; padding: 0 !important;
-        border: none !important;
-    }</style><style type="text/css">.ViewSDK_hideOverflow {
-        overflow: hidden;
-    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
-        width: 100%;
-    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
-        width: 100vw;
-    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
-        height: 100%;
-    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
-        height: 100vh;
-    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
-        width:100vw !important; height:100vh !important;
-        max-width:100vw !important; max-height:100vh !important;
-        position:fixed; top:0; left:0; z-index:9999;
-        margin: 0 !important; padding: 0 !important;
-        border: none !important;
-    }</style><style type="text/css">.ViewSDK_LBFullScreenPDFViewer {
-        width:100vw !important; height:100vh !important;
-        max-width:100vw !important; max-height:100vh !important;
-        position:fixed; top:0; left:0; z-index:10000;
-        margin: 0 !important; padding: 0 !important;
-        background-color: rgba(0, 0, 0, 0.2);
-        border: none !important;
-    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
-        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
-        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
-        position:fixed; top:0; left:0; z-index:9999;
-        margin: 0 !important; padding: 0 !important;
-        border: none !important;
-    }</style><style type="text/css">.ViewSDK_LBLoader {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        z-index: 10000;
-        border: 4px solid #f3f3f3;
-        border-top: 4px solid #1473E6;
-        width: 56px !important;
-        height: 56px !important;
-        margin: -32px 0 0 -32px;
-        border-radius: 50%;
-        -webkit-animation: lbSpin 2s linear infinite;
-        animation: lbSpin 2s linear infinite;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Isaac Osei | Engineering Projects Portfolio</title>
+  <meta name="description" content="Engineering projects by Isaac Osei: Neckklava neck guard (Rethink the Rink 2024), Tacti-Chair, Combat Robot, Python apps, and more." />
+  <style>
+    :root{
+      --bg:#0f1116; --fg:#e6e6e6; --muted:#a9b0bc; --accent:#46b3ff; --card:#171a22;
+      --shadow: 0 6px 30px rgba(0,0,0,.35);
     }
-    @-webkit-keyframes lbSpin {
-        0% { -webkit-transform: rotate(0deg); }
-        100% { -webkit-transform: rotate(360deg); }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;line-height:1.55}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{padding:24px 0 8px;border-bottom:1px solid #222}
+    header h1{margin:0;font-size:2rem}
+    header p{margin:.25rem 0 .75rem;color:var(--muted)}
+    .links a{margin-right:12px}
+
+    /* Project cards */
+    section.project{background:var(--card);border:1px solid #222;border-radius:14px;padding:20px;margin:22px 0;box-shadow:var(--shadow)}
+    section.project h2{margin:0 0 8px;font-size:1.35rem}
+    .blurb{color:var(--fg);margin:0 0 14px}
+    .meta{color:var(--muted);font-size:.95rem;margin:4px 0 14px}
+
+    /* Carousel */
+    .carousel{position:relative;overflow:hidden;border-radius:12px;border:1px solid #262b36;background:#0b0e13}
+    .carousel-track{display:flex;transition:transform .45s ease;will-change:transform}
+    .carousel-slide{min-width:100%;position:relative}
+    .carousel-slide img{display:block;width:100%;height:420px;object-fit:cover;background:#0c1016}
+    .caption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0));color:#f0f3f8;padding:10px 14px;font-size:.95rem}
+
+    .controls{display:flex;align-items:center;justify-content:space-between}
+    .btn{appearance:none;border:1px solid #2b3240;background:#121722;color:#e8eef9;padding:8px 12px;border-radius:10px;margin:12px 6px;cursor:pointer}
+    .btn:hover{background:#192033}
+    .dots{display:flex;gap:8px;margin:0 8px 12px;justify-content:center}
+    .dot{width:9px;height:9px;border-radius:50%;background:#2b3548;border:1px solid #3a475c}
+    .dot.active{background:#6ab0ff;border-color:#6ab0ff}
+
+    footer{margin:40px 0 20px;color:var(--muted);font-size:.95rem}
+    code.kbd{background:#1b2130;border:1px solid #2a3550;border-radius:6px;padding:2px 6px}
+    @media (max-width:680px){
+      .carousel-slide img{height:260px}
     }
-    @keyframes lbSpin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }</style></head>
+  </style>
+</head>
 <body>
-<section class="hero">
-<div class="hero-body">
-<div class="container is-max-desktop">
-<div class="columns is-centered">
-<div class="column has-text-centered">
-<h1 class="title is-1 publication-title">Welcome to My Project Portfolio</h1>
-<div class="is-size-5 publication-authors">
-<!-- Paper authors -->
+  <div class="container">
+    <header>
+      <h1>Isaac Osei <span style="color:var(--muted)">| Engineering Projects Portfolio</span></h1>
+      <p>Welcome to my project portfolio. Explore selected work spanning product design, robotics, CAD, and software.</p>
+      <div class="links">
+        https://arxiv.org/pdf/%3CARXIV%20PAPER%20ID%3E.pdfPaper</a>
+        <a href="static/pdfs/supplemential.pdfSupplementary</a>
+        https://github.com/IceCreamSandwhichCode</a>
+        <a href="httpsorg/abs/%3CARXIV%20PAPER%20ID%3EarXiv</a>
+      </div>
+    </header>
 
-<!-- <span class="author-block">
-<a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-<span class="author-block">
-<a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-<span class="author-block">
-<a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-</span>
-</div>
-<div class="is-size-5 publication-authors">
-<span class="author-block">Institution Name<br>Conferance name and year</span>
-<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-</div>
-<div class="column has-text-centered">
-<div class="publication-links">
--->
+    <!-- Project 1: Neckklava -->
+    <section id="neckklava" class="project" aria-labelledby="neckklava-title">
+      <h2 id="neckklava-title">Neckklava – Innovative Neck Protection for Hockey Players</h2>
+      <p class="blurb">
+        My team developed the <strong>Neckklava</strong>, a balaclava-inspired neck guard designed to improve player safety without sacrificing comfort or mobility. As part of <strong>Rethink The Rink 2024</strong>, we ideated, prototyped, and presented to experts from the Pittsburgh Penguins, Covestro, Bauer Hockey, and CMU’s College of Engineering—all in one week. Our design focused on ergonomics, advanced materials, and player usability.
+      </p>
+      <p class="meta">Role: CAD modeling, materials research, prototyping &amp; testing</p>
+      <div class="carousel" data-carousel>
+        <div class="carousel-track">
+          <figure class="carousel-slide">
+            static/images/rethink-prototype-1.jpg
+            <figcaption class="caption">Award-winning prototype with project poster (Rethink the Rink 2024).</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            <img src="static/images/rethink-poster-1.jpg" alt="Project poster fortion">Project poster summarizing goals, materials, and testing.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            static/images/neckklava-cad-1.png
+            <figcaption class="caption">CAD head model used to optimize fit and coverage.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            <img src="static/images/neckklava-cad-2.png" alt="Exploded CAD view of the Neckded CAD showing protective zones and layering.</figcaption>
+          </figure>
+        </div>
+        <div class="controls">
+          <button class="btn" data-prev aria-label="Previous slide">◀</button>
+          <div class="dots" aria-label="Slide indicators"></div>
+          <button class="btn" data-next aria-label="Next slide">▶</button>
+        </div>
+      </div>
+    </section>
 
-<!-- Arxiv PDF link -->
-<span class="link-block">
-<a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/pdf/&lt;ARXIV PAPER ID&gt;.pdf" target="_blank">
-<span class="icon">
-<i class="fas fa-file-pdf"></i>
-</span>
-<span>Paper</span>
-</a>
-</span>
-<!-- Supplementary PDF link -->
-<span class="link-block">
-<a class="external-link button is-normal is-rounded is-dark" href="static/pdfs/supplementary_material.pdf" target="_blank">
-<span class="icon">
-<i class="fas fa-file-pdf"></i>
-</span>
-<span>Supplementary</span>
-</a>
-</span>
-<!-- Github link -->
-<span class="link-block">
-<a class="external-link button is-normal is-rounded is-dark" href="https://github.com/IceCreamSandwhich" target="_blank">
-<span class="icon">
-<i class="fab fa-github"></i>
-</span>
-<span>Code</span>
-</a>
-</span>
-<!-- ArXiv abstract Link -->
-<span class="link-block">
-<a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/abs/&lt;ARXIV PAPER ID&gt;" target="_blank">
-<span class="icon">
-<i class="ai ai-arxiv"></i>
-</span>
-<span>arXiv</span>
-</a>
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Teaser video-->
-<section class="hero teaser">
-<div class="container is-max-desktop">
-<div class="hero-body">
-<video autoplay="" controls="" height="100%" id="tree" loop="" muted="" poster="">
-<!-- Your video here -->
-<source src="static/videos/banner_video.mp4" type="video/mp4">
-</video>
-<h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-</div>
-</div>
-</section>
-<!-- End teaser video -->
+    <!-- Project 2: Tacti-Chair -->
+    <section id="tacti-chair" class="project" aria-labelledby="tacti-title">
+      <h2 id="tacti-title">Tacti‑Chair – Haptic Trail Guidance Seat</h2>
+      <p class="blurb">
+        A <strong>tactile feedback chair</strong> concept to assist visually impaired hikers with wayfinding cues and posture guidance. We explored actuator placement, power budgeting, and durable outdoor materials for real-world trails.
+      </p>
+      <p class="meta">Role: Mechanism design, enclosure CAD, quick-turn prototyping</p>
+      <div class="carousel" data-carousel>
+        <div class="carousel-track">
+          <figure class="carousel-slide">
+            <img src="static/images/tacti-chair-1.jpg" alt="Prototype Tss="caption">Early bench prototype validating actuator layout.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            <img src="staticcti-chair-2.jpg
+            <figcaption class="caption">CAD assembly and mounting strategy.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            static/images/tacti-chair-3.jpg
+            <figcaption class="caption">Outdoor proof‑of‑concept testing.</figcaption>
+          </figure>
+        </div>
+        <div class="controls">
+          <button class="btn" data-prev aria-label="Previous slide">◀</button>
+          <div class="dots" aria-label="Slide indicators"></div>
+          <button class="btn" data-next aria-label="Next slide">▶</button>
+        </div>
+      </div>
+    </section>
 
-<!-- Paper abstract -->
+    <!-- Project 3: Combat Robot -->
+    <section id="combat-robot" class="project" aria-labelledby="combat-title">
+      <h2 id="combat-title">Taco Bell Combat Robot – Compact Mechanical Design</h2>
+      <p class="blurb">
+        A battlebot‑style robot focused on <strong>robust drivetrains</strong>, serviceable armor, and quick‑swap weapon modules. The project emphasized weight‑conscious design and rapid repairs between matches.
+      </p>
+      <p class="meta">Role: Chassis CAD, drivetrain selection, manufacturing</p>
+      <div class="carousel" data-carousel>
+        <div class="carousel-track">
+          <figure class="carousel-slide">
+            <img src="static/images/combat-robot-1.jpg" alt="Combat robots="caption">Chassis and armor CAD exploration.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            static/images/combat-robot-2.jpg
+            <figcaption class="caption">Assembly shake‑down before arena testing.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            static/images/combat-robot-3.jpg
+            <figcaption class="caption">Quick‑swap weapon module concept.</figcaption>
+          </figure>
+        </div>
+        <div class="controls">
+          <button class="btn" data-prev aria-label="Previous slide">◀</button>
+          <div class="dots" aria-label="Slide indicators"></div>
+          <button class="btn" data-next aria-label="Next slide">▶</button>
+        </div>
+      </div>
+    </section>
 
-<!-- 
-<section class="section hero is-light">
-<div class="container is-max-desktop">
-<div class="columns is-centered has-text-centered">
-<div class="column is-four-fifths">
-<h2 class="title is-3">Project Overview</h2>
-<div class="content has-text-justified">
-<p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-</div>
-</div>
-</div>
-</div>
-</section>
--->
+    <!-- Project 4: Python Apps -->
+    <section id="python-apps" class="project" aria-labelledby="python-title">
+      <h2 id="python-title">Python Game &amp; App Projects</h2>
+      <p class="blurb">
+        A collection of small <strong>Python</strong> projects including a Sudoku solver/game and a vector drawing app. Focus areas included clean UI, algorithm correctness, and save/export features.
+      </p>
+      <p class="meta">Role: Full‑stack Python, UI, and algorithm design</p>
+      <div class="carousel" data-carousel>
+        <div class="carousel-track">
+          <figure class="carousel-slide">
+            <img src="static/images/python-sudoku-1.png" alt="Screenshot of a Python">Sudoku game with built‑in solver.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            <img src="static/images/python-app-1       <figcaption class="caption">Lightweight UI components and state handling.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            <img src="staticthon-drawing-1.png
+            <figcaption class="caption">Vector drawing app prototype.</figcaption>
+          </figure>
+        </div>
+        <div class="controls">
+          <button class="btn" data-prev aria-label="Previous slide">◀</button>
+          <div class="dots" aria-label="Slide indicators"></div>
+          <button class="btn" data-next aria-label="Next slide">▶</button>
+        </div>
+      </div>
+    </section>
 
-<!-- End paper abstract -->
-<!-- Image carousel -->
-<section class="hero is-small">
-<div class="hero-body">
-<div class="container">
-<div class="carousel results-carousel" id="results-carousel">
-<div class="item">
-<!-- Your image here -->
-<img alt="MY ALT TEXT" src="static/images/Rethink_ Pose.jpg">
-<h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-</div>
-<div class="item">
-<!-- Your image here -->
-<img alt="MY ALT TEXT" src="static/images/carousel2.jpg">
-<h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-</div>
-<div class="item">
-<!-- Your image here -->
-<img alt="MY ALT TEXT" src="static/images/carousel3.jpg">
-<h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-</div>
-<div class="item">
-<!-- Your image here -->
-<img alt="MY ALT TEXT" src="static/images/carousel4.jpg">
-<h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
- 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-<div class="hero-body">
-<div class="container">
-<!-- Paper video. -->
-<h2 class="title is-3">Video Presentation</h2>
-<div class="columns is-centered has-text-centered">
-<div class="column is-four-fifths">
-<div class="publication-video">
-<!-- Youtube embed code here -->
-<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/JkaxUblCGz0"></iframe>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- End youtube video -->
-<!-- Video carousel -->
-<section class="hero is-small">
-<div class="hero-body">
-<div class="container">
-<h2 class="title is-3">Another Carousel</h2>
-<div class="carousel results-carousel" id="results-carousel">
-<div class="item item-video1">
-<video autoplay="" controls="" height="100%" id="video1" loop="" muted="" poster="">
-<!-- Your video file here -->
-<source src="static/videos/carousel1.mp4" type="video/mp4">
-</video>
-</div>
-<div class="item item-video2">
-<video autoplay="" controls="" height="100%" id="video2" loop="" muted="" poster="">
-<!-- Your video file here -->
-<source src="static/videos/carousel2.mp4" type="video/mp4">
-</video>
-</div>
-<div class="item item-video3">
-<video autoplay="" controls="" height="100%" id="video3" loop="" muted="" poster="">\
-            <!-- Your video file here -->
-<source src="static/videos/carousel3.mp4" type="video/mp4">
-</video>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- End video carousel -->
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-<div class="hero-body">
-<div class="container">
-<h2 class="title">Documentation</h2>
-<iframe height="550" src="static/pdfs/sample.pdf" width="100%">
-</iframe>
-</div>
-</div>
-</section>
-<!--End paper poster -->
-<!--BibTex citation -->
+    <footer>
+      <p>Feel free to reach out at mailto:isaacosei4583@gmail.comisaacosei4583@gmail.com</a> or connect on LinkedIn: <a href="httpsin.com/in/isaac-oseilinkedin.com/in/isaac-osei</a></p>
+      <p>
+        This page was built using the <a href="https://github.com/eliahuhorwitz-project-page-templateAcademic Project Page Template</a> adopted from the https://nerfies.github.io/Nerfies</a> project page. You are free to borrow the source code; please link back in the footer. Licensed under http://creativecommons.org/licenses/by-sa/4.0/CC BY‑SA 4.0</a>.
+      </p>
+      <p style="margin-top:8px;font-size:.9rem;color:#8a94a6">Tip: Use <code class="kbd">←</code> and <code class="kbd">→</code> to navigate carousels with the keyboard.</p>
+    </footer>
+  </div>
 
-<!--End BibTex citation -->
-<section class="section"><h2 class="title is-3">Project Overview</h2><div class="content">Explore my engineering and programming projects, ranging from robotics and CAD design to Python applications and fabrication challenges.</div></section><section class="section"><h2 class="title is-3">Featured Projects</h2><p>• Tacti-Chair – tactile chair for visually impaired hikers</p><p>• Taco Bell Combat Robot – mechanical combat robot</p><p>• Python Game and App Projects – Sudoku and drawing app</p><p>• Rethink the Rink Make-a-Thon – Baklava-style neck guard</p></section><section class="section"><h2 class="title is-3">Research Highlights</h2><div class="content">This section showcases my research in robotics, including micro-robot design, localization algorithms, and experimental locomotion studies.</div></section><section class="section"><h2 class="title is-3">Contact</h2><div class="content">Feel free to reach out via email at isaacosei4583@gmail.com or connect with me on LinkedIn: linkedin.com/in/isaac-osei</div></section><footer class="footer">
-<div class="container">
-<div class="columns is-centered">
-<div class="column is-8">
-<div class="content">
-<p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the&nbsp;<a href="https://nerfies.github.io" target="_blank">Nerfies</a>&nbsp;project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-</div>
-</div>
-</div>
-</div>
-</footer>
-<!-- Statcounter tracking code -->
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-<!-- End of Statcounter Code -->
+  <script>
+  // Minimal, reusable carousel implementation (no external deps)
+  (function(){
+    const carousels = document.querySelectorAll('[data-carousel]');
+    const KEY_LEFT = 37, KEY_RIGHT = 39;
 
+    function setupCarousel(root){
+      const track = root.querySelector('.carousel-track');
+      const slides = Array.from(root.querySelectorAll('.carousel-slide'));
+      const prevBtn = root.querySelector('[data-prev]');
+      const nextBtn = root.querySelector('[data-next]');
+      const dotsWrap = root.querySelector('.dots');
+      let index = 0; // current slide
 
-</body></html>
+      // build dots
+      slides.forEach((_, i)=>{
+        const d = document.createElement('button');
+        d.className = 'dot' + (i===0?' active':'');
+        d.setAttribute('aria-label', 'Go to slide ' + (i+1));
+        d.addEventListener('click', ()=>goTo(i));
+        dotsWrap.appendChild(d);
+      });
+
+      function update(){
+        track.style.transform = 'translateX(' + (-index*100) + '%)';
+        dotsWrap.querySelectorAll('.dot').forEach((d,i)=>{
+          d.classList.toggle('active', i===index);
+        });
+      }
+      function goTo(i){ index = Math.max(0, Math.min(slides.length-1, i)); update(); }
+      function next(){ goTo(index+1); }
+      function prev(){ goTo(index-1); }
+
+      nextBtn.addEventListener('click', next);
+      prevBtn.addEventListener('click', prev);
+      // keyboard
+      root.addEventListener('keydown', (e)=>{
+        if(e.keyCode===KEY_LEFT) prev();
+        else if(e.keyCode===KEY_RIGHT) next();
+      });
+      root.setAttribute('tabindex','0'); // make focusable for keyboard nav
+
+      // Keep transform in sync on resize
+      window.addEventListener('resize', update);
+      update();
+    }
+
+    carousels.forEach(setupCarousel);
+  })();
+  </script>
+</body>
+</html>

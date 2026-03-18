@@ -74,11 +74,11 @@ body {
 
 .publication-video {
     position: relative;
-    width: 100%;
+    padding-bottom: 56.25%; 
     height: 0;
-    padding-bottom: 56.25%;
     overflow: hidden;
-    border-radius: 10px !important;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .publication-video iframe {
@@ -278,4 +278,18 @@ body {
 .video-16x9 video::-webkit-media-controls-mute-button {
     background-color: rgba(255,255,255,0.8);
     border-radius: 50%;
+}
+
+/* Mobile Overrides */
+@media screen and (max-width: 768px) {
+  /* Stack interpolation images vertically on mobile */
+  .interpolation-panel .interpolation-image-wrapper {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ensure the slider aligns correctly when stacked */
+  .interpolation-panel .interpolation-image-wrapper:last-child {
+    margin-bottom: 0;
+  }
 }
